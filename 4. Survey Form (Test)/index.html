@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+<body>
+<h1 id="title">Survey Form</h1>
+<p id="description">Please fill out the survey. We'd love to hear your feedback!</p>
+<form id="survey-form">
+    <hr>
+    <fieldset>
+        <legend>User Information:</legend>
+        <label id="name-label">Name: <input type="text" id="name" placeholder="Enter your name..." required></label>
+        <label id="email-label">Email: <input type="email" id="email" placeholder="Enter your email..." required></label>
+        <label id="number-label">Age: <input type="number" id="number" placeholder="25" min="13" max="110"></label>
+        <label id="referral-label">How did you hear about us?
+            <select id="dropdown">
+                <option class="noOption" value="">(Select an option)</option>
+                <option value="1">The internet</option>
+                <option value="2">A friend</option>
+                <option value="3">A family member</option>
+                <option value="4">A teacher</option>
+            </select>
+        </label>
+    </fieldset>
+        <fieldset id="referral">
+            <legend>Would you recommend us to your friends and family?</legend>
+            <label class="radio inline"><input id="radio-yes" type="radio" name="radio-yes-no" value="yes"> Yes</label>
+            <label class="radio inline"><input id="radio-no" type="radio" name="radio-yes-no" value="no"> No</label>
+        </fieldset>
+        <fieldset id="rating">
+            <legend>Please rate your service (1=Not Satisfied / 5=Extremely Satisfied)</legend>
+            <label class="check inline">1 <input type="checkbox" value="1"></label>
+            <label class="check inline">2 <input type="checkbox" value="2"></label>
+            <label class="check inline">3 <input type="checkbox" value="3"></label>
+            <label class="check inline">4 <input type="checkbox" value="4"></label>
+            <label class="check inline">5 <input type="checkbox" value="5"></label>
+        </fieldset>
+    <fieldset>
+        <legend>Additional Feedback:</legend>
+        <textarea rows="40" cols="40" placeholder="Please provide any additional feedback..."></textarea>
+    </fieldset>
+    <input type="submit" id="submit">
+</form>
+</body>
+</html>
