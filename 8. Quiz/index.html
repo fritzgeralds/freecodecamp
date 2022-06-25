@@ -38,11 +38,76 @@
             </section>
             <section class="" role="region" aria-labelledby="html-questions">
                 <h2 id="html-questions">HTML Questions:</h2>
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question" name="html-question-one">
+                        <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
+                        <ul>
+                            <li>
+                                <label for="q1-a1">
+                                    <input type="radio" id="q1-a1" name="q1" value="true" />
+                                     True
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q1-a2">
+                                    <input type="radio" id="q1-a2" name="q1" value="false" />
+                                     False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question" name="html-question-two">
+                        <legend>A label element nesting an input element is required to have a for attribute with the same value as the input's id</legend>
+                        <ul>
+                            <li>
+                                <label for="q2-a1">
+                                    <input type="radio" id="q2-a1" name="q2" value="true" />
+                                     True
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q2-a2">
+                                    <input type="radio" id="q2-a2" name="q2" value="false" />
+                                     False
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
             </section>
             <section class="" role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">CSS Questions:</h2>
+                <div class="question-block">
+                    <label for="q3-a1">Are you a frontend developer?</label>
+                </div>
+                <div class="answer">
+                    <select id="q3-a1" name="q3-a1" required>
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="question-block">
+                    <label for="q4-a1">Do you have any questions:</label>
+                </div>
+                <div class="answer">
+                    <textarea id="q4-a1" name="q4-a1" rows="5" cols="50" placeholder="Please enter your question here..."></textarea>
+                </div>
             </section>
+            <input type="submit" id="submit" value="Submit" />
         </form>
     </main>
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org">freeCodeCamp</a><br />
+            San Francisco<br />
+            California<br />
+            USA
+        </address>
+    </footer>
 </body>
 </html>
